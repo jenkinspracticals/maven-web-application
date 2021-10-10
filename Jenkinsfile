@@ -4,7 +4,7 @@ agent any
 
 tools
 {
-  maven 'maven3.6.3'
+  maven 'maven3.8.3'
 
 }
 
@@ -22,7 +22,7 @@ options{
    stage('CheckoutCode')
    {
      steps{
-	 git branch: 'development', credentialsId: '8e348aa2-9531-4dbe-863d-1adb64897470', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+	git credentialsId: '790d9d01-86d2-48df-b2a9-72f18105394b', url: 'https://github.com/jenkinspracticals/maven-web-application.git'
 	 }
    }
    
